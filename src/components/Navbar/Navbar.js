@@ -3,40 +3,29 @@ import { Image } from 'react-bootstrap';
 import './Navbar.css';
 import Iconuser from './usericon.png';
 import Icon from '../Icon/Icon';
-import { Link, Switch, Route } from "react-router-dom";
+import { Link, Switch, Route, withRouter } from "react-router-dom";
 
 const Navbar = (props) => {
+    console.log(props, "aqui es");
     const renderLinks = () => {
-        return (
-            <Switch>
-                <Route path="/signin" component={() => <Link className="position" to='/register'>Register</Link>} />
-                <Route path="/" exact component={() =>
-                    <div>
-                        <Link className="objetives" to='/objetives'>Objetives</Link>
-                        <Image src={Iconuser} onClick={props.onShow} />
-                        <Icon show={props.show} onLogout={props.onRouteChange} />
-                    </div>} />
-                <Route path="/register" component={() => <Link className="position" to='/signin'>Sign In</Link>} />
-                <Route path="/objetives" component={() => <Link className="position" to='/'>Dashboard</Link>} />
-            </Switch>
-        )
-
-        // if (props.route === '/'){
-        //     return (
-        //         <div>
-        //             <Image src={Iconuser} roundedCircle onClick={props.onShow} />
-        //             <Icon show={props.show} onLogout={props.onRouteChange} />
-        //         </div>
-        //     )
-        // }
-        // else if (props.route === 'register') {
-        //     return <Link className="position" to='/register'>Register</Link>
-        // }
-
-        // else {
-        //     return <Link className="position" style={{ textDecoration: 'none' }} to='/signin'>Sign In</Link>
-        // }
-
+        if (props.location.pathname === "/") {
+            return (
+                <React.Fragment>
+                    <Link className="objetives" to='/objetives'>Objetives</Link>
+                    <Image src={Iconuser} onClick={props.onShow} />
+                    <Icon show={props.show} onLogout={props.onRouteChange} />
+                </React.Fragment>
+            )
+        }
+        else if (props.location.pathname === "/signin"){
+               return <Link className="position" to='/register'>Register</Link>
+        }
+        else if (props.location.pathname === "/register") {
+            return <Link className="position" to='/signin'>Sign In</Link>    
+        }
+        else {
+            return <Link className="position" to='/'>Dashboard</Link>
+        }
     }
     return (
         <div className="navbar">
@@ -48,4 +37,4 @@ const Navbar = (props) => {
     )
 }
 
-export default Navbar;
+export default withRouter(Navbar);

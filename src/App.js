@@ -70,12 +70,12 @@ class App extends Component {
         <BrowserRouter>
           <Navbar show={this.state.show} route={this.state.route} onShow={this.onShow} onRouteChange={this.onRouteChange} />
           <Switch>
-            <Route path="/signin" component={() =>
+            <Route path="/signin" exact component={() =>
               <div className='components-position'>
                 <Signin isAuthenticated={this.isAuthenticated} />
               </div>} />
             <Route path="/" exact component={Dashboard} />
-            <Route path="/register" component={() =>
+            <Route path="/register" exact component={() =>
               <div className='components-position'>
                 <Register isAuthenticated={this.isAuthenticated} />
               </div>} />

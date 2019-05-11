@@ -1,0 +1,18 @@
+.Container {
+    display: flex;
+}
+
+.AdviceContainer {
+    width: 320px;
+}
+
+.Containerflex {
+    flex-flow: column;
+}
+
+.gblink {
+    text-decoration: none; 
+    background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
+    background-clip: text;
+    color: transparent;
+}

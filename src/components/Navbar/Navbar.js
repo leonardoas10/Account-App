@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 import './Navbar.css';
 import Iconuser from './usericon.png';
 import Icon from '../Icon/Icon';
-import { Link, Switch, Route, withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 const Navbar = (props) => {
     console.log(props, "aqui es");
@@ -30,7 +30,7 @@ const Navbar = (props) => {
     return (
         <div className="navbar">
             <nav className="nav">
-                <span>My Account App</span>
+                <span className="title">My Account App</span>
                 {renderLinks()}
             </nav>
         </div>

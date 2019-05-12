@@ -10,7 +10,6 @@ import Objetives from './components/Objetives/Objetives';
 const initialState = {
   show: false,
   route: 'signin',
-  isSignedIn: false,
   isAuthenticated: true
 }
 
@@ -39,27 +38,6 @@ class App extends Component {
     this.setState({ route: route });
   }
 
-  // renderBody() {
-  //   if (this.state.route === '/') {
-  //     return <Dashboard/>
-  //   }  
-  //   else if (this.state.route === 'signin') {
-  //     return (
-  //       <div className='components-position'>
-  //         <Signin isAuthenticated={this.isAuthenticated}/>
-  //       </div>
-  //     )
-
-  //   }
-  //   else  {
-  //     return (
-  //       <div className='components-position'>
-  //         <Register isAuthenticated={this.isAuthenticated}/>
-  //       </div>
-  //     )
-  //   }
-  // }
-
   isAuthenticated = () => {
     this.setState({ isAuthenticated: true });
   }
@@ -84,7 +62,6 @@ class App extends Component {
           </Switch>
 
         </BrowserRouter>
-        {/* {this.renderBody()} */}
       </div>
     )
   }

@@ -11,7 +11,7 @@ const Navbar = (props) => {
         if (props.location.pathname === "/") {
             return (
                 <React.Fragment>
-                    <Link className="objetives" to='/objetives'>Objetives</Link>
+                    <Link className="investment" to='/investment'>Investment</Link>
                     <Image src={Iconuser} onClick={props.onShow} />
                     <Icon show={props.show} onLogout={props.onRouteChange} />
                 </React.Fragment>
@@ -24,7 +24,13 @@ const Navbar = (props) => {
             return <Link className="position" to='/signin'>Sign In</Link>    
         }
         else {
-            return <Link className="position" to='/'>Dashboard</Link>
+            return (
+                <React.Fragment>
+                    <Link className="dashboard" to='/'>Dashboard</Link>
+                    <Image src={Iconuser} onClick={props.onShow} />
+                    <Icon show={props.show} onLogout={props.onRouteChange} />
+                </React.Fragment>
+            )
         }
     }
     return (

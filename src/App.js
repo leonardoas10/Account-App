@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/Register/Register';
 import Signin from './components/Signin/Signin';
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
-import Objetives from './components/Objetives/Objetives';
+import Investment from './components/Investment/Investment';
 
 const initialState = {
   show: false,
@@ -57,7 +57,7 @@ class App extends Component {
               <div className='components-position'>
                 <Register isAuthenticated={this.isAuthenticated} />
               </div>} />
-            <Route path="/objetives" component={Objetives} />
+            <Route path="/investment" component={Investment} />
             <Redirect to="/signin" />
           </Switch>
 

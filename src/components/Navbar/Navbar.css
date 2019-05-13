@@ -33,14 +33,26 @@
     transform: scale(1.2);
 }
 
-.objetives {
+.investment {
     transition: 0.5s; 
     text-decoration: none;
     color: black;
     margin-right: 120px;
 }
 
-.objetives:hover {
+.investment:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.dashboard {
+    transition: 0.5s; 
+    text-decoration: none;
+    color: black;
+    margin-right: 125px;
+}
+
+.dashboard:hover {
     cursor: pointer;
     transform: scale(1.2);
 }

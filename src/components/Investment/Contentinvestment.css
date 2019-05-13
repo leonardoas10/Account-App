@@ -1,0 +1,27 @@
+.Contentinvestment {
+    display: flex;
+    flex-flow: column;  
+    width: 250px;
+    text-align: center;     
+    justify-content: center;
+    margin: 0 80px;
+    border-radius: 5px;
+    background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
+    color: white;
+    padding: 15px 22px 15px 22px;
+}
+
+.Contentinvestment span:nth-child(1) {
+    padding: 0 0 40px 0;
+}
+
+.Contentinvestment span:nth-child(1), .Contentinvestment span:nth-child(2)  {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.Contentinvestment span:nth-child(1):hover, .Contentinvestment span:nth-child(2):hover {
+    transform: scale(1.2);
+}

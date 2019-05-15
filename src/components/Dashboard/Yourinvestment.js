@@ -1,15 +1,30 @@
 import React from 'react';
 import './Yourinvestment.css';
+import {Link} from 'react-router-dom';
 
 const Yourinvestment = (props) => {
-    const { title, subtitle1, subtitle2, amount1, amount2, total } = props;
+    const { title, investments } = props;
+
+    const total = investments.reduce((prev, curr) => {
+        return curr.totalDeposited + prev
+    }, 0);
     return (
         <div className="Yourinvestment">
             <h1>{title}</h1>
-            <h2>{subtitle1} ${amount1}</h2>
-            <h2>{subtitle2} ${amount2}</h2>
-            <hr className="drawline-total"></hr> 
-            <h3>{total}</h3>
+            {investments.map((investment, index) => {
+                return (
+                    <h2 key={index}>
+                        {/* <span>{investment.title}</span> */}
+                        <Link to={'/investments/' + investment.id} className="investment-link">{investment.title}</Link>
+                        <span>${investment.totalDeposited} </span>
+                    </h2>
+                )
+            })}
+            <hr className="drawline-total"></hr>
+            <h3>
+                <span>Total:</span>
+                <span>${total}</span>
+            </h3>
         </div>
     );
 }

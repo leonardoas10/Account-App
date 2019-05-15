@@ -26,6 +26,6 @@
     padding: 45px 0;    
 }
 
-.Contentdashboard span:nth-child(1):hover, .Contentdashboard span:nth-child(3):hover {
+.Contentdashboard span:nth-child(3):hover {
     transform: scale(1.2);
 }

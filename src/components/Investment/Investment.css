@@ -1,3 +1,9 @@
+.drawline-container {
+    margin-top: 70px;
+    height: 3px;
+    background-color: black;
+}
+
 .Containerflex-investment {
     display: flex;
     flex-wrap: wrap;
@@ -18,4 +24,10 @@
     height: 2px;
     width: 1200px;
     background-color: black;
+}
+
+.Containerflex-investment div:last-child > span:last-child {
+    background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
+    background-clip: text;
+    color: transparent;
 }

@@ -1,6 +1,6 @@
 .Yourinvestment {
     width: 430px;
-    height: 385px;
+    height: 485px;
     border: 5px;
     margin: 20px 20px 3px 10px;
     border-radius: 5px;
@@ -14,18 +14,24 @@
 }
 
 .Yourinvestment h2 {
+    display: flex;
+    justify-content: space-between; 
     font-size: 30px;
     text-align: left;
     height: 60px;     
+    padding: 0 30px 0 30px;
 }
 
 .Yourinvestment h3 {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     text-align: center;
     font-size: 30px;
     background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
     background-clip: text;
     color: transparent;
+    padding: 0 30px 0 30px;
 }
 
 .drawline-total {
@@ -33,4 +39,18 @@
     height: 3px;
     width: 425px;
     background-color: white;
+}
+
+.investment-link {
+    transition: 0.5s; 
+    text-decoration: none;
+    color: white;
+}
+
+.investment-link:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.2);
 }

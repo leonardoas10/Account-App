@@ -21,12 +21,17 @@
 
 .Advice h3 {
     text-decoration: none;
-    border-radius: 5px;
     text-align: center;
     font-size: 30px;
     margin: 5px;
     cursor: pointer;
+    transition: 0.5s; 
 }
+
+.Advice h3:hover {
+    transform: scale(1.2);
+}
+
 
 .Advice h4 {
     text-align: center;
@@ -38,9 +43,5 @@
     width: 430px;
     height: 575px;
     border-radius: 5px;
-    transition: 0.5s; 
 }
 
-.Advice img:hover {
-    transform: scale(1.05);
-}

@@ -1,0 +1,17 @@
+.details h1 {
+    margin-left: 200px;
+}
+
+.details h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 300px 22px 300px;
+}
+
+.details h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 300px 22px 300px;
+}
+
+

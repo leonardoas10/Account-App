@@ -6,12 +6,11 @@ import Icon from '../Icon/Icon';
 import { Link, withRouter } from "react-router-dom";
 
 const Navbar = (props) => {
-    console.log(props, "aqui es");
     const renderLinks = () => {
         if (props.location.pathname === "/") {
             return (
                 <React.Fragment>
-                    <Link className="investment" to='/investment'>Investment</Link>
+                    {/* <Link className="investment" to='/investment'>Investment</Link> */}
                     <Image src={Iconuser} onClick={props.onShow} />
                     <Icon show={props.show} onLogout={props.onRouteChange} />
                 </React.Fragment>

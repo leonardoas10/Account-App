@@ -1,15 +1,26 @@
 import React from 'react';
 import './Details.css';
 
+
 const Details = (props) => {
-    const { title, subtitle1, subtitle2, amount1, amount2, total } = props;
+    const { title, time, money, transaction, details } = props;
     return (
-        <div className="Yourinvestment">
+        <div className="details">
             <h1>{title}</h1>
-            <h2>{subtitle1} ${amount1}</h2>
-            <h2>{subtitle2} ${amount2}</h2>
-            <hr className="drawline-total"></hr> 
-            <h3>{total}</h3>
+            <h2>  
+                <span>{time}</span>
+                <span>{money}</span>
+                <span>{transaction}</span>
+            </h2>
+            {details.map((detail, index) => {
+                return (
+                    <h3 key={index}>
+                        <span>{detail.date}</span>
+                        <span>${detail.amount} </span>
+                        <span>{detail.type} </span>
+                    </h3>
+                )
+            })}
         </div>
     );
 }

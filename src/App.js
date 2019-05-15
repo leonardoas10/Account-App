@@ -48,17 +48,18 @@ class App extends Component {
         <BrowserRouter>
           <Navbar show={this.state.show} route={this.state.route} onShow={this.onShow} onRouteChange={this.onRouteChange} />
           <Switch>
-            <Route path="/signin" exact component={() =>
+            
+            <Route path="/signin" component={() =>
               <div className='components-position'>
                 <Signin isAuthenticated={this.isAuthenticated} />
               </div>} />
             <Route path="/" exact component={Dashboard} />
-            <Route path="/register" exact component={() =>
+            <Route path="/register" component={() =>
               <div className='components-position'>
                 <Register isAuthenticated={this.isAuthenticated} />
               </div>} />
-            <Route path="/investment" component={Investment} />
-            <Redirect to="/signin" />
+            <Route path="/investments/:id" component={Investment} />
+            {/* <Redirect to="/signin" /> */}
           </Switch>
 
         </BrowserRouter>

@@ -1,10 +1,13 @@
 .details h1 {
+    margin-top: 50px;
     margin-left: 200px;
+    font-size: 30px;
 }
 
 .details h2 {
     display: flex;
     justify-content: space-between;
+    font-size: 30px;
     margin: 22px 300px 22px 300px;
 }
 
@@ -12,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin: 22px 300px 22px 300px;
+    font-size: 25px;
 }
 
 

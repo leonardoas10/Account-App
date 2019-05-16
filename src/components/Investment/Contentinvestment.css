@@ -1,7 +1,7 @@
 .Contentinvestment {
     display: flex;
     flex-flow: column;  
-    width: 250px;
+    width: 298px;
     text-align: center;     
     justify-content: center;
     margin: 0 80px;
@@ -22,6 +22,6 @@
     transition: 0.5s;
 }
 
-.Contentinvestment span:nth-child(1):hover, .Contentinvestment span:nth-child(2):hover {
+.Contentinvestment span:nth-child(2):hover {
     transform: scale(1.2);
 }

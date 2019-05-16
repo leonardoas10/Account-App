@@ -2,16 +2,12 @@
     display: flex;
     flex-flow: column;  
     width: 330px;
-    height: 250px;
+    height: 277px;
     margin: 20px 20px 3px 20px;
     border-radius: 5px;
     background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
     color: white;
-    padding: 15px 22px 15px 22px;
-}
-
-.Contentdashboard span:nth-child(1) {
-    padding: 20px 0 0 0;
+    padding: 10px 22px 15px 22px;
 }
 
 .Contentdashboard span:nth-child(1), .Contentdashboard span:nth-child(3)  {

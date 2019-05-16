@@ -3,3 +3,30 @@
   justify-content: center;
   margin-top: 100px;  
 }
+
+.input-nosubmit {
+  width: 60%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.input-nosubmit:hover {
+  color: white;
+  background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
+}
+
+.submit-buttom  {
+  width: 25%;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 5px;    
+  color: black;
+  text-align: center;  
+}
+
+.submit-buttom:hover {
+  text-decoration: none;
+  background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
+  color: white;
+}

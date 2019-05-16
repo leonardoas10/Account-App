@@ -34,10 +34,8 @@ const Navbar = (props) => {
     }
     return (
         <div className="navbar">
-            <nav className="nav">
                 <span className="title">My Account App</span>
                 {renderLinks()}
-            </nav>
         </div>
     )
 }

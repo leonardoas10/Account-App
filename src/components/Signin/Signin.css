@@ -1,6 +1,6 @@
 .Signin {
     width: 15%;
-    height: 300px;
+    height: 330px;
     background-image: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
     border-radius: 5px;
     display: flex;
@@ -10,37 +10,13 @@
 }
 
 .Signin h1 {
+    margin-top: 25px;
     text-align: center;
 }
 
 .Signin label {
+    margin-top: 10px;
     text-align: center;
     font-size: 20px;
 }
 
-.input-nosubmit {
-    width: 60%;
-    margin: 15px 0;
-    border-radius: 5px;
-}
-
-.input-nosubmit:hover {
-    color: white;
-    background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
-}
-
-.submit-buttom  {
-    width: 20%;
-    margin: 10px 0;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 5px;    
-    color: black;
-    
-}
-
-.submit-buttom:hover {
-    background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
-    color: white;
-    padding: 3px;
-}

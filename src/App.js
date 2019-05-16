@@ -7,6 +7,7 @@ import Signin from './components/Signin/Signin';
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import Investment from './components/Investment/Investment';
 
+
 const initialState = {
   show: false,
   route: 'signin',

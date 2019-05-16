@@ -1,6 +1,7 @@
 import React from 'react';
 import './Investment.css'
 import Contentinvestment from './Contentinvestment';
+import Modala from './Modal';
 import Details from './Details';    
 
  // Modelo Investment con transacciones
@@ -116,6 +117,7 @@ const Investment = (props) => {
         <>
             <div className="Container-investment">
                 <span className="investment-title">{investmentDetails.title}</span>
+                <Modala/>
                 <hr className="drawline-investment"></hr>
                 <div className="Containerflex-investment">
                     <Contentinvestment title="Deposited" amount={investmentDetails.totalDeposited} />

@@ -15,11 +15,24 @@
     background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
     background-clip: text;
     color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s; 
+}
+
+.gblink:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.2);
+    text-decoration: none;
 }
 
 .drawline {
     margin: 20px 0 0 0;
-    height: 880px;
+    height: 870px;
     width: 3px;
     background-color: black;
 }

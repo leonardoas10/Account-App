@@ -2,7 +2,7 @@ import React from 'react';
 import './Register.css'
 import { Link } from "react-router-dom";   
 
-const Register = (props) => {
+const Register = () => {
     return (
         <div className="Register">
             <h1>Register</h1>
@@ -21,9 +21,7 @@ const Register = (props) => {
                 className="input-nosubmit"
                 type="email"
             />
-            <div>
-                <Link className='submit-buttom' to='/'>Register</Link>
-            </div>  
+            <Link className='submit-buttom' to='/'>Register</Link>
         </div>
     );
 }

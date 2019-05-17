@@ -1,16 +1,40 @@
 import React, {Component} from 'react';
-import Signincss from './Signin.css'
-import { Link } from "react-router-dom";    
-
+import Signincss from './Signin.css' 
 
 class Signin extends Component {
     state= {
         signInPassword: "",
-        signInEmail: ""
+        signInEmail: "",
+        hasError: false,
     }
 
+    fetchSignin = (event) => {
+        event.preventDefault();
+        fetch("http://localhost:3001/signin", {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              email: this.state.signInEmail,
+              password: this.state.signInPassword,
+          })
+        },
+        )
+        .then(response => response.json())
+        .then(data => {console.log(data, "data")
+            if (data.token) {
+                console.log(this.props);
+                this.props.history.push("/");
+            }
+            else {
+                this.setState({hasError: true}) 
+            }
+        })
+      }
     
   onEmailChange = (event) => {
+
     this.setState({signInEmail: event.target.value})
   }
 
@@ -20,22 +44,27 @@ class Signin extends Component {
 
     render() {
         return (
-            <div className="Signin">
+            <form className="Signin">
                 <h1>Sign In</h1>
                 <label>Email</label>
                 <input
+                    name="email"
                     className="input-nosubmit"
                     type="email"
                     onChange={this.onEmailChange}
+                    value={this.state.signInEmail}
                 />
                 <label>Password</label>
                 <input
+                    name="password"
                     className="input-nosubmit"
                     type="password"
                     onChange={this.onPasswordChange}
+                    value={this.state.signInPassword}
                 />
-                <Link style={Signincss} className='submit-buttom' to='/'>Sign In</Link>
-            </div>
+                <span className={this.state.hasError ? null : "hidden-error"} >error authentication</span>
+                <button style={Signincss} className='submit-buttom' type="button" onClick={this.fetchSignin}>Sign In</button>
+            </form>
         );
     }
 }

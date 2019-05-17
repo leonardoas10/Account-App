@@ -4,21 +4,25 @@ import './Modal.css';
 import FormDeposit from './Form';
 
 class Modala extends Component {
-    constructor(props, context) {
-        super(props, context);
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+    // constructor(props, context) {
+    //     super(props, context);
+    //     this.handleShow = this.handleShow.bind(this);
+    //     this.handleClose = this.handleClose.bind(this);
 
-        this.state = {
-            show: false,
-        };
-    }
+    //     this.state = {
+    //         show: false,
+    //     };
+    // }
 
-    handleClose() {
+    state = {
+        show: false,
+    };
+
+    handleClose = () => {
         this.setState({ show: false });
     }
 
-    handleShow() {
+    handleShow = () => {
         this.setState({ show: true });
     }
 
@@ -26,12 +30,12 @@ class Modala extends Component {
         return (
             <>
                 <Button className="launch-buttom" variant="primary" onClick={this.handleShow}>
-                    New Transaction
+                    New Deposit
                 </Button>
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header className="modal-title-new" closeButton>
-                        <Modal.Title className="modal-title-new">New Transaction</Modal.Title>
+                        <Modal.Title className="modal-title-new">New Deposit</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <FormDeposit/>

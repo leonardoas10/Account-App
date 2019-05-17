@@ -21,9 +21,8 @@ class App extends Component {
   }
 
   onShow = (e) => {
-    e.stopPropagation();
     console.log('aqui', this.state.show)
-
+    e.stopPropagation();
     this.setState((prevState) => {
       return {
         show: !prevState.show,
@@ -45,15 +44,16 @@ class App extends Component {
 
   render() {
     return (
-      <div onClick={this.onShowClose}>
+      <div>
         <BrowserRouter>
           <Navbar show={this.state.show} route={this.state.route} onShow={this.onShow} onRouteChange={this.onRouteChange} />
           <Switch>
-            
-            <Route path="/signin" component={() =>
+
+            <Route path="/signin" component={(props) =>
               <div className='components-position'>
-                <Signin isAuthenticated={this.isAuthenticated} />
+                <Signin {...props} isAuthenticated={this.isAuthenticated} />
               </div>} />
+
             <Route path="/" exact component={Dashboard} />
             <Route path="/register" component={() =>
               <div className='components-position'>

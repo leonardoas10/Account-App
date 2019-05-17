@@ -36,14 +36,6 @@ class FormDeposit extends Component {
                     <Form.Label>Amount</Form.Label>
                     <Form.Control type="email" placeholder="$" className="time-border" />
                 </Form.Group>
-                <Form.Group controlId="formGroupPassword">
-                    <Form.Label>Type</Form.Label>
-                    <Form.Control as="select">
-                        <option>{null}</option>
-                        <option>Deposit</option>
-                        <option>Transaction</option>
-                    </Form.Control>
-                </Form.Group>
             </Form>
         )
     }

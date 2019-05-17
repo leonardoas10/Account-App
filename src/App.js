@@ -55,9 +55,9 @@ class App extends Component {
               </div>} />
 
             <Route path="/" exact component={Dashboard} />
-            <Route path="/register" component={() =>
+            <Route path="/register" component={(props) =>
               <div className='components-position'>
-                <Register isAuthenticated={this.isAuthenticated} />
+                <Register {...props} isAuthenticated={this.isAuthenticated} />
               </div>} />
             <Route path="/investments/:id" component={Investment} />
             {/* <Redirect to="/signin" /> */}

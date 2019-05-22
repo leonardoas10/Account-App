@@ -56,3 +56,21 @@
     transform: scale(1.2);
     text-decoration: none;
 }
+
+@media screen and (min-width: 721px) {
+	.Yourinvestment {
+        width: 440px;
+    }
+    .drawline-total {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+	.Yourinvestment {
+        width: 470px;
+    }
+    .drawline-total { 
+        width: 425px;
+    }
+}

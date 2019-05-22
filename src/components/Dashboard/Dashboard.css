@@ -3,7 +3,7 @@
 }
 
 .AdviceContainer {
-    width: 320px;
+    width: 220px;
 }
 
 .Containerflex {
@@ -35,4 +35,5 @@
     height: 870px;
     width: 3px;
     background-color: black;
+    z-index: 1;
 }

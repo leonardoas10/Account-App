@@ -116,14 +116,17 @@ const Investment = (props) => {
     return (
         <>
             <div className="Container-investment">
-                <span className="investment-title">{investmentDetails.title}</span>
-                <Modala/>
+                <span className="investment-title">
+                {investmentDetails.title}
+                </span>
+                
                 <hr className="drawline-investment"></hr>
                 <div className="Containerflex-investment">
                     <Contentinvestment title="Deposited" amount={investmentDetails.totalDeposited} />
                     <Contentinvestment title="Balance" amount={investmentDetails.balance * -1} />
                     <Contentinvestment title="Total Earn" amount={totalEarn} />
                 </div>
+                <Modala/>
                 <Details title="Transactions" time='Time' money='Amount' transaction='Type' details={investmentDetails.transactions} />
                 <hr className="drawline-container"></hr>
             </div>

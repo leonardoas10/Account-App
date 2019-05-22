@@ -37,7 +37,7 @@ const Dashboard = () => {
                 <hr className="drawline"></hr>
                 <div className="Containerflex">
                     <Contentdashboard title="Deposited" amount={5} description="Last Deposit: (...)" />
-                    <Contentdashboard title="Balance" amount={7} description="It´s efficient if you invest!" />
+                    <Contentdashboard title="Balance" amount={7} description="It´s efficient, invest!" />
                     <Contentdashboard title="Total Earn" amount={2} description="Keep going!" />
                 </div>
                 <Yourinvestment className="AdviceContainer" title="Your Investments" investments={investments} />

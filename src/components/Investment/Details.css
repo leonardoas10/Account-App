@@ -1,6 +1,6 @@
 .details h1 {
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 50px;
     font-size: 30px;
 }
 
@@ -8,14 +8,32 @@
     display: flex;
     justify-content: space-between;
     font-size: 30px;
-    margin: 22px 300px 22px 300px;
+    margin: 22px 60px;
 }
 
 .details h3 {
     display: flex;
     justify-content: space-between;
-    margin: 22px 300px 22px 300px;
+    margin: 22px 60px;
     font-size: 25px;
+}
+
+@media screen and (min-width: 721px) {
+    .details h1 {
+        margin-left: 80px;
+    }
+	.details h2, .details h3 {
+        margin: 22px 250px;
+	}
+}
+
+@media screen and (min-width: 1380px) {
+    .details h1 {
+        margin-left: 200px;
+    }
+	.details h2, .details h3 {
+		margin: 22px 300px;
+	}
 }
 
 

@@ -34,7 +34,9 @@ const Navbar = (props) => {
     return (
         <div className="navbar">
                 <span className="title">My Account App</span>
-                {renderLinks()}
+                <div className="flexposition-navbar">
+                    {renderLinks()}
+                </div>
         </div>
     )
 }

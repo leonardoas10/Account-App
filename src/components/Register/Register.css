@@ -1,5 +1,5 @@
 .Register {
-    width: 15%;
+    width: 60%;
     height: 390px;
     background-image: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
     border-radius: 5px;
@@ -12,9 +12,19 @@
 .Register h1 {
     margin-top: 25px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .Register label {
     text-align: center;
     font-size: 20px;
+}
+
+@media screen and (min-width: 721px) {
+	.Register {
+        width: 300px;
+    }
+    .Register h1 {
+        margin-bottom: 15px;
+    }
 }

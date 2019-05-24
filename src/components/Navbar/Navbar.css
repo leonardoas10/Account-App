@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;  
     height: 60px;
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
@@ -12,12 +12,22 @@
     padding: 0 !important;
 }
 
+.flexposition-navbar {
+    width: 20%;
+    height: 100%;
+}
+
+.flexposition-navbar > img, .flexposition-navbar > a {
+    display: inline-block;
+    margin: 0 5%;
+}
+
 .title {
     margin-left: 30px;
 }
 
 .position {
-    margin-right: 50px;
+    
     transition: 0.5s;
     text-decoration: none;
     color: black;
@@ -34,7 +44,7 @@
     transition: 0.5s; 
     text-decoration: none;
     color: black;
-    margin-right: 125px;
+
 }
 
 .dashboard:hover {
@@ -47,9 +57,6 @@
 .navbar img {
     height: 38px;
     width: 38px;
-    position: absolute;
-    left: 1810px;
-    top: 6px;
     transition: 0.5s;
 }
 

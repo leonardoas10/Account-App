@@ -4,11 +4,23 @@
     width: 298px;
     text-align: center;     
     justify-content: center;
-    margin: 0 80px;
+    margin: 0 40px;
     border-radius: 5px;
     background-image: LINEAR-GRADIENT(45deg, RGB(18, 8, 69), RGB(167, 169, 255));
     color: white;
     padding: 15px 22px 15px 22px;
+}
+
+@media screen and (min-width: 721px) {
+	.Contentinvestment {
+        margin: 0 75.8px;
+	}
+}
+
+@media screen and (min-width: 1380px) {
+	.Contentinvestment {
+		margin: 0 80px;
+	}
 }
 
 .Contentinvestment span:nth-child(1) {

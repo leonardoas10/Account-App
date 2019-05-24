@@ -4,15 +4,6 @@ import './Modal.css';
 import FormDeposit from './Form';
 
 class Modala extends Component {
-    // constructor(props, context) {
-    //     super(props, context);
-    //     this.handleShow = this.handleShow.bind(this);
-    //     this.handleClose = this.handleClose.bind(this);
-
-    //     this.state = {
-    //         show: false,
-    //     };
-    // }
 
     state = {
         show: false,
@@ -33,7 +24,7 @@ class Modala extends Component {
                     New Deposit
                 </Button>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <Modal className="modal-width" show={this.state.show} onHide={this.handleClose}> {/* responsive en iphone */}
                     <Modal.Header className="modal-title-new" closeButton>
                         <Modal.Title className="modal-title-new">New Deposit</Modal.Title>
                     </Modal.Header>

@@ -1,5 +1,5 @@
 .Signin {
-    width: 15%;
+    width: 60%;
     height: 330px;
     background-image: linear-gradient(to right, RGB(255, 86, 81), RGB(253, 253, 255));
     border-radius: 5px;
@@ -23,4 +23,12 @@
 .hidden-error {
     display: none;  
 }
+
+@media screen and (min-width: 721px) {
+	.Signin {
+        width: 300px;
+	}
+}
+
+
 

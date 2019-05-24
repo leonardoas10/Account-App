@@ -10,7 +10,6 @@ const Navbar = (props) => {
         if (props.location.pathname === "/") {
             return (
                 <React.Fragment>
-                    {/* <Link className="investment" to='/investment'>Investment</Link> */}
                     <Image src={Iconuser} onClick={props.onShow} />
                     <Icon show={props.show} onLogout={props.onRouteChange} />
                 </React.Fragment>

@@ -11,18 +11,6 @@
   text-align: center;
 }
 
-@media screen and (min-width: 721px) {
-	.dropdown {
-    left: 85%;
-	}
-}
-
-@media screen and (min-width: 1380px) {
-	.dropdown {
-		left: 90%;
-	}
-}
-
 .dropdown p {
   padding-top: 15px !important;
 }
@@ -43,6 +31,18 @@
   text-decoration: none !important;
   color: black !important;
   transform: scale(1.2);   
+}
+
+@media screen and (min-width: 721px) {
+	.dropdown {
+    left: 85%;
+	}
+}
+
+@media screen and (min-width: 1380px) {
+	.dropdown {
+		left: 90%;
+	}
 }
 
 

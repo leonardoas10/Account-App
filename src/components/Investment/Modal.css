@@ -9,21 +9,6 @@
     top: 102%;
 }
 
-@media screen and (min-width: 721px) {
-	.launch-buttom {
-        left: 80%;
-        top: 78%;
-	}
-}
-
-@media screen and (min-width: 1380px) {
-	.launch-buttom {
-        left: 80%;
-        top: 58%
-	}
-}
-
-
 .launch-buttom:hover {
     color: black;
     transform: scale(1.2);
@@ -51,4 +36,18 @@
 
 .launch-buttom-send:hover {
     color: black;
+}
+
+@media screen and (min-width: 721px) {
+	.launch-buttom {
+        left: 80%;
+        top: 78%;
+	}
+}
+
+@media screen and (min-width: 1380px) {
+	.launch-buttom {
+        left: 80%;
+        top: 56%
+	}
 }

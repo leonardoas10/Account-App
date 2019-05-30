@@ -27,7 +27,7 @@
 }
 
 .position {
-    
+    text-align: center;
     transition: 0.5s;
     text-decoration: none;
     color: black;

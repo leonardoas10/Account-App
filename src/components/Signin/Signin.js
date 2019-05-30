@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Signincss from './Signin.css' 
+import './Signin.css' 
 
 class Signin extends Component {
     state= {

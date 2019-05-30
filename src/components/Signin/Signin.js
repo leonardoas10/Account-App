@@ -13,7 +13,8 @@ class Signin extends Component {
         fetch("http://localhost:8000/api/signin", {
           method: 'POST',
           headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
           },
           body: JSON.stringify({
               email: this.state.signInEmail,
